@@ -7,11 +7,7 @@ pipeline {
         stage('Build Frontend') {
             steps {
                 dir('crud-app') {
-                    bat '''
-                    if exist node_modules (
-                        rmdir /S /Q node_modules
-                    )
-                    '''
+                    
                     bat 'npm install'
                     bat 'npm run build'
                 }
