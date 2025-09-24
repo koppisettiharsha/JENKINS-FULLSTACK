@@ -40,7 +40,7 @@
 	</dependencies>
 	
 	<build>
-	<finalName>jenkinsfullstack</finalName>
+	<finalName>jenkins-fullstack</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
