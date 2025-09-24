@@ -9,7 +9,7 @@ pipeline {
                 dir('crud-app') {
                     
                     bat 'npm install'
-                    bat 'npm run build'
+                    bat 'set CI=false && npm run build'
                 }
             }
         }
