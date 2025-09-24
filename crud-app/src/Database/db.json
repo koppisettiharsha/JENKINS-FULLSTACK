@@ -1,32 +1,33 @@
 {
-  "users": [
+  "tasks": [
     {
-      "name": "Mohd Shami",
-      "username": "mohdshami",
-      "email": "shami@gmail.com",
-      "phone": "7896547896",
-      "id": 4
+      "id": 1,
+      "title": "Write project brief",
+      "description": "Draft initial scope and goals",
+      "priority": "High",
+      "status": "Pending",
+      "categoryId": 101
     },
     {
-      "name": "Shikhar Dhawan",
-      "username": "dhawansikhar",
-      "email": "dhawan@gmail.com",
-      "phone": "4569874563",
-      "id": 6
+      "id": 2,
+      "title": "Design wireframes",
+      "description": "Create low-fidelity UI wireframes",
+      "priority": "Medium",
+      "status": "In Progress",
+      "categoryId": 102
     },
     {
-      "name": "Virat Kohli",
-      "username": "viratkohli",
-      "email": "viratkohli@gmail.com",
-      "phone": "8596589658",
-      "id": 7
-    },
-    {
-      "name": "Pankaj Tripathi",
-      "username": "pankajtripathi",
-      "email": "pankaj@gmail.com",
-      "phone": "9658965236",
-      "id": 8
+      "id": 3,
+      "title": "Set up CI/CD",
+      "description": "Configure GitHub Actions pipeline",
+      "priority": "Low",
+      "status": "Completed",
+      "categoryId": 103
     }
+  ],
+  "categories": [
+    { "id": 101, "name": "Planning" },
+    { "id": 102, "name": "Design" },
+    { "id": 103, "name": "DevOps" }
   ]
 }

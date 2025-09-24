@@ -1,22 +1,21 @@
-import AllUsers from './Component/AllUsers';
-import AddUser from './Component/AddUser';
-import EditUser from './Component/EditUser';
-import NavBar from './Component/NavBar';
-import NotFound from './Component/NotFound'; 
-import CodeForInterview from './Component/CodeForInterview';
+import AllTasks from "./Component/AllTasks";
+import AddTask from "./Component/AddTask";
+import EditTask from "./Component/EditTask";
+import NavBar from "./Component/NavBar";
+import NotFound from "./Component/NotFound";
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path="/" element={<CodeForInterview />} />
-        <Route path="/all" element={<AllUsers />} />
-        <Route path="/add" element={<AddUser />} />
-        <Route path="/edit/:id" element={<EditUser />} />
-        <Route element={<NotFound />} />
+        <Route path="/" element={<AllTasks />} />
+        <Route path="/all" element={<AllTasks />} />
+        <Route path="/add" element={<AddTask />} />
+        <Route path="/edit/:id" element={<EditTask />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
