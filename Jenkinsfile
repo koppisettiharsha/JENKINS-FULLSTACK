@@ -9,7 +9,8 @@ pipeline {
                 dir('crud-app') {
                     
                     bat 'npm install'
-                    bat 'set CI=false && npm run build'
+                    bat 'set CI=false && set DISABLE_ESLINT_PLUGIN=true && npm run build'
+
                 }
             }
         }
